@@ -1,8 +1,7 @@
 {
-  "name": "babel-webpack",
+  "name": "Simple Cognito demo",
   "version": "1.0.0",
-  "description": "Babel webpack example ",
-  "main": "index.js",
+  "description": "A simple demo of several authentication flows with AWS Cognoito.",
   "scripts": {
     "dev": "webpack-dev-server --open",
     "build": "webpack"
