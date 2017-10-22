@@ -2,6 +2,8 @@
   "name": "simple-cognito-demo",
   "version": "1.0.0",
   "description": "A simple demo of several authentication flows with AWS Cognoito.",
+  "repository": "https://github.com/trivento/simple-cognito-demo.git",
+  "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --open",
     "build": "webpack"
