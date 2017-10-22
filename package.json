@@ -1,5 +1,5 @@
 {
-  "name": "Simple Cognito demo",
+  "name": "simple-cognito-demo",
   "version": "1.0.0",
   "description": "A simple demo of several authentication flows with AWS Cognoito.",
   "scripts": {
