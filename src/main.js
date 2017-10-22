@@ -23,18 +23,13 @@ if (!appConfig.region || !appConfig.UserPoolId || !appConfig.ClientId) {
     ClientId: appConfig.ClientId,
   });
 
-  const signupDiv = document.createElement('div');
-  signupDiv.setAttribute("id", "signup");
-  document.body.appendChild(signupDiv);
-  const confirmRegistrationDiv = document.createElement('div');
-  confirmRegistrationDiv.setAttribute("id", "confirmRegistration");
-  document.body.appendChild(confirmRegistrationDiv);
-  const forgotPasswordDiv = document.createElement('div');
-  forgotPasswordDiv.setAttribute("id", "forgotPassword");
-  document.body.appendChild(forgotPasswordDiv);
-  const signinDiv = document.createElement('div');
-  signinDiv.setAttribute("id", "signin");
-  document.body.appendChild(signinDiv);
+  var addDiv = function(tag) {
+    const authDiv = document.createElement('div');
+    authDiv.setAttribute("id", tag);
+    document.body.appendChild(authDiv);
+  }
+  const tags = ['signup', 'confirmRegistration', 'forgotPassword', 'signin']
+  tags.forEach(addDiv);
 
   ReactDOM.render(<SignUpForm userPool={userPool}/>, document.getElementById('signup'));
   ReactDOM.render(<ConfirmRegistrationForm userPool={userPool}/>, document.getElementById('confirmRegistration'));
