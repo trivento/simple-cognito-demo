@@ -66,7 +66,7 @@ export class ForgotPasswordForm extends React.Component {
     if (!this.state.showContinuationForm) {
       return (
         <div>
-          <h1>Password forgotten ... ?</h1>
+          <h1>Password forgotten?</h1>
           <form onSubmit={this.handlePasswordForgotten.bind(this)}>
             <input type="text" value={this.state.username} placeholder="Username" onChange={this.handleUsernameChange.bind(this)}/><br/>
             <input type="submit" value="Password forgotten?"/>
